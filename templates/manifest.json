@@ -1,0 +1,119 @@
+{
+  "version": "13.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "SimpleAppStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "SimpleAppStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/SimpleAppStack/MySimpleAppBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppBucket6B59014A",
+            "trace": [
+              "new Bucket (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.ts:713:22)",
+              "new SimpleAppStack (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\lib\\simple-app-stack.ts:8:20)",
+              "Object.<anonymous> (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:776:30)",
+              "Module.m._compile (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:787:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:829:12)",
+              "main (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:776:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:829:12)",
+              "findNodeScript.then.existing (C:\\Users\\remruat-thanga\\AppData\\Roaming\\nvm\\v10.16.0\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/SimpleAppStack/MySimpleAppBucketNameExport": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MySimpleAppBucketNameExport",
+            "trace": [
+              "new SimpleAppStack (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\lib\\simple-app-stack.ts:12:5)",
+              "Object.<anonymous> (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\bin\\simple-app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:776:30)",
+              "Module.m._compile (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:787:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:829:12)",
+              "main (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:776:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)",
+              "Module.load (internal/modules/cjs/loader.js:653:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:593:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:829:12)",
+              "findNodeScript.then.existing (C:\\Users\\remruat-thanga\\AppData\\Roaming\\nvm\\v10.16.0\\node_modules\\npm\\node_modules\\libnpx\\index.js:268:14)"
+            ]
+          }
+        ],
+        "/SimpleAppStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "construct (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5)",
+              "visit (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.App.process.once (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (events.js:286:20)",
+              "process.emit (events.js:198:13)",
+              "process.EventEmitter.emit (domain.js:448:20)",
+              "process.emit (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\source-map-support\\source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:126:23)"
+            ]
+          }
+        ],
+        "/SimpleAppStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:31:27)",
+              "construct (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5)",
+              "visit (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.App.process.once (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (events.js:286:20)",
+              "process.emit (events.js:198:13)",
+              "process.EventEmitter.emit (domain.js:448:20)",
+              "process.emit (D:\\Rem\\aws\\aws_cdk_course\\simple-app\\node_modules\\source-map-support\\source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:126:23)"
+            ]
+          }
+        ]
+      },
+      "displayName": "SimpleAppStack"
+    }
+  }
+}

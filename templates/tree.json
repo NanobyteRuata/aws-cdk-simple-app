@@ -1,0 +1,105 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree",
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Construct",
+          "version": "1.116.0"
+        }
+      },
+      "SimpleAppStack": {
+        "id": "SimpleAppStack",
+        "path": "SimpleAppStack",
+        "children": {
+          "MySimpleAppBucket": {
+            "id": "MySimpleAppBucket",
+            "path": "SimpleAppStack/MySimpleAppBucket",
+            "children": {
+              "Notifications": {
+                "id": "Notifications",
+                "path": "SimpleAppStack/MySimpleAppBucket/Notifications",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.Construct",
+                  "version": "1.116.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "SimpleAppStack/MySimpleAppBucket/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "bucketEncryption": {
+                      "serverSideEncryptionConfiguration": [
+                        {
+                          "serverSideEncryptionByDefault": {
+                            "sseAlgorithm": "AES256"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "@aws-cdk/aws-s3.CfnBucket",
+                  "version": "1.116.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/aws-s3.Bucket",
+              "version": "1.116.0"
+            }
+          },
+          "MySimpleAppBucketNameExport": {
+            "id": "MySimpleAppBucketNameExport",
+            "path": "SimpleAppStack/MySimpleAppBucketNameExport",
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.CfnOutput",
+              "version": "1.116.0"
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "SimpleAppStack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "SimpleAppStack/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnResource",
+                  "version": "1.116.0"
+                }
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "SimpleAppStack/CDKMetadata/Condition",
+                "constructInfo": {
+                  "fqn": "@aws-cdk/core.CfnCondition",
+                  "version": "1.116.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@aws-cdk/core.Construct",
+              "version": "1.116.0"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@aws-cdk/core.Stack",
+          "version": "1.116.0"
+        }
+      }
+    },
+    "constructInfo": {
+      "fqn": "@aws-cdk/core.App",
+      "version": "1.116.0"
+    }
+  }
+}
